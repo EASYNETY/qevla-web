@@ -1,0 +1,254 @@
+[30-Jun-2022 14:02:29 UTC] PHP Warning:  array_merge(): Argument #1 is not an array in /home/qevlqvum/public_html/wp-content/plugins/wpforms-lite/src/Migrations/Base.php on line 180
+[30-Jun-2022 14:02:29 UTC] PHP Warning:  ksort() expects parameter 1 to be array, boolean given in /home/qevlqvum/public_html/wp-content/plugins/wpforms-lite/src/Migrations/Base.php on line 190
+[30-Jun-2022 14:02:29 UTC] PHP Warning:  array_filter() expects parameter 1 to be array, boolean given in /home/qevlqvum/public_html/wp-content/plugins/wpforms-lite/src/Migrations/Base.php on line 226
+[11-Nov-2022 14:31:38 UTC] WordPress database error Illegal mix of collations (utf8_general_ci,IMPLICIT) and (utf8mb4_unicode_520_ci,COERCIBLE) for operation '=' for query SELECT comment_ID FROM wpag_comments WHERE comment_post_ID = 1 AND comment_parent = '0' AND comment_approved != 'trash' AND ( comment_author = 'Content Generator' AND comment_author_email = 'p9ha4z71ywgh@gmail.com' ) AND comment_content = '﻿Artificial intelligence creates content for the site, no worse than a copywriter, you can also use it to write articles. 100% uniqueness :). Click Here:👉 https://stanford.io/3FXszd0' LIMIT 1 made by wp_handle_comment_submission, wp_new_comment, wp_allow_comment
+[22-Dec-2022 15:21:14 UTC] Cron reschedule event error for hook: elementor_1_elementor_updater_cron, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"elementor_1_elementor_updater_cron_interval","args":[],"interval":300}
+[08-Jun-2023 13:29:38 UTC] WordPress database error Table 'wpag_wpforms_payments' already exists for query CREATE TABLE wpag_wpforms_payments (
+			id bigint(20) NOT NULL AUTO_INCREMENT,
+			form_id bigint(20) NOT NULL,
+			status varchar(10) NOT NULL DEFAULT '',
+			subtotal_amount decimal(26,8) NOT NULL DEFAULT 0,
+			discount_amount decimal(26,8) NOT NULL DEFAULT 0,
+			total_amount decimal(26,8) NOT NULL DEFAULT 0,
+			currency varchar(3) NOT NULL DEFAULT '',
+			entry_id bigint(20) NOT NULL DEFAULT 0,
+			gateway varchar(20) NOT NULL DEFAULT '',
+			type varchar(12) NOT NULL DEFAULT '',
+			mode varchar(4) NOT NULL DEFAULT '',
+			transaction_id varchar(40) NOT NULL DEFAULT '',
+			customer_id varchar(40) NOT NULL DEFAULT '',
+			subscription_id varchar(40) NOT NULL DEFAULT '',
+			subscription_status varchar(10) NOT NULL DEFAULT '',
+			title varchar(255) NOT NULL DEFAULT '',
+			date_created_gmt datetime NOT NULL,
+			date_updated_gmt datetime NOT NULL,
+			is_published tinyint(1) NOT NULL DEFAULT 1,
+			PRIMARY KEY  (id),
+			KEY form_id (form_id),
+			KEY status (status(8)),
+			KEY total_amount (total_amount),
+			KEY type (type(8)),
+			KEY transaction_id (transaction_id(32)),
+			KEY customer_id (customer_id(32)),
+			KEY subscription_id (subscription_id(32)),
+			KEY subscription_status (subscription_status(8)),
+			KEY title (title(64))
+		) DEFAULT CHARACTER SET utf8 made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Migrations\Base->init, WPForms\Migrations\Base->maybe_create_tables, WPForms\Db\Payments\Payment->create_table, dbDelta
+[08-Jun-2023 13:29:38 UTC] WordPress database error Table 'wpag_wpforms_payments' already exists for query CREATE TABLE wpag_wpforms_payments (
+			id bigint(20) NOT NULL AUTO_INCREMENT,
+			form_id bigint(20) NOT NULL,
+			status varchar(10) NOT NULL DEFAULT '',
+			subtotal_amount decimal(26,8) NOT NULL DEFAULT 0,
+			discount_amount decimal(26,8) NOT NULL DEFAULT 0,
+			total_amount decimal(26,8) NOT NULL DEFAULT 0,
+			currency varchar(3) NOT NULL DEFAULT '',
+			entry_id bigint(20) NOT NULL DEFAULT 0,
+			gateway varchar(20) NOT NULL DEFAULT '',
+			type varchar(12) NOT NULL DEFAULT '',
+			mode varchar(4) NOT NULL DEFAULT '',
+			transaction_id varchar(40) NOT NULL DEFAULT '',
+			customer_id varchar(40) NOT NULL DEFAULT '',
+			subscription_id varchar(40) NOT NULL DEFAULT '',
+			subscription_status varchar(10) NOT NULL DEFAULT '',
+			title varchar(255) NOT NULL DEFAULT '',
+			date_created_gmt datetime NOT NULL,
+			date_updated_gmt datetime NOT NULL,
+			is_published tinyint(1) NOT NULL DEFAULT 1,
+			PRIMARY KEY  (id),
+			KEY form_id (form_id),
+			KEY status (status(8)),
+			KEY total_amount (total_amount),
+			KEY type (type(8)),
+			KEY transaction_id (transaction_id(32)),
+			KEY customer_id (customer_id(32)),
+			KEY subscription_id (subscription_id(32)),
+			KEY subscription_status (subscription_status(8)),
+			KEY title (title(64))
+		) DEFAULT CHARACTER SET utf8 made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Migrations\Base->init, WPForms\Migrations\Base->maybe_create_tables, WPForms\Db\Payments\Payment->create_table, dbDelta
+[08-Jun-2023 13:29:38 UTC] WordPress database error Table 'wpag_wpforms_payments' already exists for query CREATE TABLE wpag_wpforms_payments (
+			id bigint(20) NOT NULL AUTO_INCREMENT,
+			form_id bigint(20) NOT NULL,
+			status varchar(10) NOT NULL DEFAULT '',
+			subtotal_amount decimal(26,8) NOT NULL DEFAULT 0,
+			discount_amount decimal(26,8) NOT NULL DEFAULT 0,
+			total_amount decimal(26,8) NOT NULL DEFAULT 0,
+			currency varchar(3) NOT NULL DEFAULT '',
+			entry_id bigint(20) NOT NULL DEFAULT 0,
+			gateway varchar(20) NOT NULL DEFAULT '',
+			type varchar(12) NOT NULL DEFAULT '',
+			mode varchar(4) NOT NULL DEFAULT '',
+			transaction_id varchar(40) NOT NULL DEFAULT '',
+			customer_id varchar(40) NOT NULL DEFAULT '',
+			subscription_id varchar(40) NOT NULL DEFAULT '',
+			subscription_status varchar(10) NOT NULL DEFAULT '',
+			title varchar(255) NOT NULL DEFAULT '',
+			date_created_gmt datetime NOT NULL,
+			date_updated_gmt datetime NOT NULL,
+			is_published tinyint(1) NOT NULL DEFAULT 1,
+			PRIMARY KEY  (id),
+			KEY form_id (form_id),
+			KEY status (status(8)),
+			KEY total_amount (total_amount),
+			KEY type (type(8)),
+			KEY transaction_id (transaction_id(32)),
+			KEY customer_id (customer_id(32)),
+			KEY subscription_id (subscription_id(32)),
+			KEY subscription_status (subscription_status(8)),
+			KEY title (title(64))
+		) DEFAULT CHARACTER SET utf8 made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Migrations\Base->init, WPForms\Migrations\Base->maybe_create_tables, WPForms\Db\Payments\Payment->create_table, dbDelta
+[08-Jun-2023 13:29:38 UTC] WordPress database error Table 'wpag_wpforms_payment_meta' already exists for query CREATE TABLE wpag_wpforms_payment_meta (
+			id bigint(20) NOT NULL AUTO_INCREMENT,
+			payment_id bigint(20) NOT NULL,
+			meta_key varchar(255),
+			meta_value longtext,
+			PRIMARY KEY  (id),
+			KEY payment_id (payment_id),
+			KEY meta_key (meta_key(191)),
+			KEY meta_value (meta_value(191))
+		) DEFAULT CHARACTER SET utf8 made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), do_action('plugins_loaded'), WP_Hook->do_action, WP_Hook->apply_filters, WPForms\WPForms->WPForms\{closure}, WPForms\Migrations\Base->init, WPForms\Migrations\Base->maybe_create_tables, WPForms\Db\Payments\Meta->create_table, dbDelta
+[14-Aug-2023 12:51:39 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 12:53:39 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 12:59:49 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 13:00:27 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 13:01:04 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 16:16:09 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 16:16:09 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 16:16:11 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 16:16:12 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 16:16:14 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 16:16:15 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 16:16:16 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 16:16:18 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 16:16:19 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 16:16:21 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 16:16:22 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 16:16:24 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 16:33:49 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 17:11:15 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 17:43:26 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 18:17:21 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 18:17:58 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 18:17:58 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 18:21:26 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 18:46:54 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 18:47:19 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 18:49:08 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 18:49:33 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 19:28:43 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 19:48:22 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 20:46:47 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 20:46:48 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 20:58:58 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 21:02:37 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 21:02:38 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 21:25:34 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 21:25:34 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 22:00:48 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 22:23:32 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 22:24:04 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 22:45:56 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 22:45:56 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 22:45:56 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 22:45:56 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 22:46:00 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 22:46:01 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 22:46:06 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[14-Aug-2023 22:46:07 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 00:23:58 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 00:26:03 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 04:56:20 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 04:56:25 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 04:56:30 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 04:56:35 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 04:56:39 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 04:56:55 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 04:57:00 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 04:57:05 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 06:13:00 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 06:14:56 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 06:23:59 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 06:30:41 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 06:32:57 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 06:33:20 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 06:33:21 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 06:33:22 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 06:33:23 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 06:41:35 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 06:50:05 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 06:58:20 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 07:06:39 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 07:15:45 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 07:24:17 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 07:32:56 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 07:42:02 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 07:50:53 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 07:59:58 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 08:09:11 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 08:13:43 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 08:18:01 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 08:27:09 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 08:36:08 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 08:45:07 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 08:54:23 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 09:03:29 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 09:12:40 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 09:21:43 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 09:30:48 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 09:40:08 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 09:49:23 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 09:58:13 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 10:07:21 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 10:16:28 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 10:25:56 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 10:35:35 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 10:35:41 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 10:35:42 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 10:35:44 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 10:35:47 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 10:35:49 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 10:35:51 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 10:35:52 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 10:35:54 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 10:44:55 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 10:54:06 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:03:29 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:05:08 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:05:18 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:05:27 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:05:37 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:05:46 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:05:55 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:06:11 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:06:20 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:06:29 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:06:39 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:06:51 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:07:00 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:07:14 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:07:22 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:07:32 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:07:42 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:07:53 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:08:04 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:08:13 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:08:22 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:08:32 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:09:07 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:09:18 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:09:26 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:09:37 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:13:01 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:22:24 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 11:31:50 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 12:00:45 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 12:02:14 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 12:11:54 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 12:16:34 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 12:16:34 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 12:22:57 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 12:27:58 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 12:41:06 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 12:46:04 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 12:51:41 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Aug-2023 12:56:49 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/qevlqvum/public_html/wp-content/themes/astra/inc/dynamic-css/content-background.php on line 77
+[15-Oct-2023 23:54:54 UTC] Cron reschedule event error for hook: monsterinsights_email_summaries_cron, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"monsterinsights_email_summaries_weekly","args":[],"interval":604800}
